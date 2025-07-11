@@ -11,6 +11,8 @@ links:
 This composable provides a convenient wrapper around [`useAsyncData`](/docs/api/composables/use-async-data) and [`$fetch`](/docs/api/utils/dollarfetch).
 It automatically generates a key based on URL and fetch options, provides type hints for request url based on server routes, and infers API response type.
 
+Keyed state created using `useFetch` can be retrieved across your Nuxt application using [`useNuxtData`](/docs/api/composables/use-nuxt-data).
+
 ::note
 `useFetch` is a composable meant to be called directly in a setup function, plugin, or route middleware. It returns reactive composables and handles adding responses to the Nuxt payload so they can be passed from server to client without re-fetching the data on client side when the page hydrates.
 ::
